@@ -551,6 +551,7 @@ header {
 }
 
 .footer-contacts {
+    margin: 0 auto;
     padding: 0 20px 0;
     width: 100%;
     max-width: 1230px;
@@ -617,7 +618,7 @@ header {
 }
 
 .footer__links {
-    margin-top: 60px;
+    margin: 60px auto 0;
     padding: 20px 20px 0;
     border-top: thin solid #ffffff2a;
 
