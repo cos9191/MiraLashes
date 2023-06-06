@@ -291,6 +291,13 @@ header {
     padding-left: 0;
 }
 
+.hero__contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
 .hero__contacts li:not(:first-child) {
     margin-top: 12px;
 }
@@ -564,6 +571,19 @@ header {
     gap: 40px;
 }
 
+.footer-contacts_list div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer-contacts_list svg {
+    width: 30px;
+    height: 30px;
+
+    color: #e1effd;
+}
+
 .footer-contacts_list a {
     transition: var(--trans-default);
 }
@@ -574,11 +594,15 @@ header {
 
 .footer-contacts_list h3 {
     margin: 0;
+
+    font-size: 20px;
     color: #e1effd;
 }
 
 .footer-contacts_list p {
     margin: 22px 0 0;
+
+    font-size: 17px;
 }
 
 .footer-contacts__map {
