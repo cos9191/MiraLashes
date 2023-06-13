@@ -803,7 +803,7 @@ header {
 .reviews__swiper-container {
     position: relative;
     margin: 32px auto 0;
-    padding: 0 30px;
+    padding: 0 50px;
 }
 
 @media (max-width: 1200px) {
@@ -852,16 +852,7 @@ header {
 @media (max-width: 768px) {
     .reviews__swiper-button-next,
     .reviews__swiper-button-prev {
-        top: 0;
-    }
-
-    .reviews__swiper-button-next,
-    .reviews__swiper-button-prev {
         top: -35px;
-    }
-
-    .reviews__swiper-button-next {
-        right: 55px;
     }
 }
 
@@ -1027,11 +1018,11 @@ header {
 }
 
 @media (max-width: 768px) {
-    .swiper-button-next {
+    .staff__swiper-button-next {
         right: -15px;
     }
 
-    .swiper-button-prev {
+    .staff__swiper-button-prev {
         left: -15px;
     }
 }
