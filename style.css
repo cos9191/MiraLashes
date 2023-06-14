@@ -864,7 +864,7 @@ header {
 .features-thumbs__swiper {
     position: relative;
     transform: translateY(-220px);
-    overflow: unset;
+    /*overflow: unset;*/
 }
 
 @media (max-width: 1200px) {
@@ -878,6 +878,9 @@ header {
 }
 
 .features-thumbs__swiper-wrapper .swiper-slide {
+    display: flex;
+    align-items: flex-end;
+
     height: 280px;
     transition: var(--trans-default);
 }
@@ -887,7 +890,7 @@ header {
 }
 
 .features-thumbs__swiper-wrapper img {
-    height: 100%;
+    height: 90%;
 }
 
 .features__swiper-button-prev,

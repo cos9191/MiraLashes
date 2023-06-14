@@ -41,7 +41,6 @@ export const initSwiper = () => {
 
             thumbs: {
                 swiper: {
-
                     el: '.features-thumbs__swiper',
                     slidesPerView: 4,
                     spaceBetween: 30,
