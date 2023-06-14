@@ -1,6 +1,7 @@
-const staffSwiperNode = document.querySelector('.staff__swiper');
-const reviewsSwiperNode = document.querySelector('.reviews__swiper');
 const promoSwiperNode = document.querySelector('.promo__swiper');
+const featuresSwiperNode = document.querySelector('.features__swiper');
+const reviewsSwiperNode = document.querySelector('.reviews__swiper');
+const staffSwiperNode = document.querySelector('.staff__swiper');
 
 export const initSwiper = () => {
     if (promoSwiperNode) {
@@ -27,17 +28,25 @@ export const initSwiper = () => {
         });
     }
 
-    if (staffSwiperNode) {
-        const staffSwiper = new Swiper('.staff__swiper', { // eslint-disable-line
+    if (featuresSwiperNode) {
+        const featuresSwiper = new Swiper('.features__swiper', { // eslint-disable-line
 
             loop: true,
-            autoHeight: true,
             slidesPerView: 1,
 
             navigation: {
-                nextEl: '.staff__swiper-button-next',
-                prevEl: '.staff__swiper-button-prev',
+                nextEl: '.features__swiper-button-next',
+                prevEl: '.features__swiper-button-prev',
             },
+
+            thumbs: {
+                swiper: {
+
+                    el: '.features-thumbs__swiper',
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
+            }
         });
     }
 
@@ -60,6 +69,20 @@ export const initSwiper = () => {
             navigation: {
                 nextEl: '.reviews__swiper-button-next',
                 prevEl: '.reviews__swiper-button-prev',
+            },
+        });
+    }
+
+    if (staffSwiperNode) {
+        const staffSwiper = new Swiper('.staff__swiper', { // eslint-disable-line
+
+            loop: true,
+            autoHeight: true,
+            slidesPerView: 1,
+
+            navigation: {
+                nextEl: '.staff__swiper-button-next',
+                prevEl: '.staff__swiper-button-prev',
             },
         });
     }
