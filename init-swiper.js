@@ -9,8 +9,8 @@ export const initSwiper = () => {
 
             loop: true,
             slidesPerView: 1,
+            watchOverflow: true,
             // initialSlide: 0,
-            // watchOverflow: true,
             // centeredSlides: true,
 
             breakpoints: {

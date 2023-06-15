@@ -554,7 +554,7 @@ header {
     margin-top: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .hero__promo-text {
         padding: 15px;
         border: thin solid rgba(223, 223, 223, 0.863);
@@ -741,7 +741,13 @@ header {
 }
 
 .catalog__wrapper {
-    padding: 40px 0 110px;
+    padding: 10px 45px 50px;
+}
+
+@media (max-width: 1200px) {
+    .catalog__wrapper {
+        padding: 10px 15px 50px;
+}
 }
 
 .catalog__wrapper h2 {
@@ -756,6 +762,72 @@ header {
 .catalog__wrapper h2 span {
     color: var(--color-bright-grey);
 }
+
+.catalog__wrapper h3 {
+    margin-top: 20px;
+
+    font-family: "Cormorant", "Roboto Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.accordion__element {
+    position: relative;
+}
+
+.catalog__wrapper .accordion {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.accordion__element .accordion__button {
+    text-align: start;
+    width: 100%;
+
+    color: var(--color-bright-grey);
+    background-color: transparent;
+
+    transition: var(--trans-default);
+}
+
+.accordion__element .accordion__button:hover {
+    color: var(--color-pink);
+}
+
+.accordion__element .accordion__button::before,
+.accordion__element .accordion__button::after {
+     content: "";
+     position: absolute;
+     right: 8px;
+     top: 20px;
+
+     width: 2px;
+     height: 15px;
+
+     background-color: var(--color-bright-grey);
+
+     transition: var(--trans-default);
+}
+
+.accordion__element .accordion__button::before {
+     transform: rotate(90deg);
+}
+
+.is-active .accordion__button::after {
+    transform: rotate(90deg);
+}
+
+.accordion__element:hover .accordion__button::before,
+.accordion__element:hover .accordion__button::after {
+    background-color: var(--color-pink);
+}
+
+/*@include m.hover {*/
+/*    opacity: 0.6;*/
+/*}*/
+
 
 /* FEATURES */
 
@@ -928,6 +1000,11 @@ header {
     }
 }
 
+.features-thumbs__swiper-button-prev,
+.features-thumbs__swiper-button-next {
+    display: none;
+}
+
 /* REVIEWS */
 
 .reviews {
@@ -1002,7 +1079,6 @@ header {
     border-radius: 10px;
     overflow: hidden;
     background-color: #ffffff;
-
 }
 
 .reviews__swiper-wrapper .swiper-slide > img {
