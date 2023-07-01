@@ -873,8 +873,7 @@ header {
 }
 
 .accordion__content p {
-    /*text-align: start;*/
-    text-align: justify;
+    text-align: start;
 }
 
 .accordion__element .accordion__button {
@@ -1430,6 +1429,12 @@ header {
 @media (max-width: 1200px) {
     .founder__photo::before {
         top: 124px;
+    }
+}
+
+@media (max-width: 768px) {
+    .founder__photo::before {
+        display: none;
     }
 }
 
