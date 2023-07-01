@@ -326,18 +326,16 @@ header {
     color: var(--color-pink);
 }
 
-.header__wrapper ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-
 .header__socials-list {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 
     align-self: center;
 }
@@ -348,7 +346,7 @@ header {
 
 @media (max-width: 1200px) {
     .header__socials-list {
-        padding-right: 30px;
+        padding-left: 30px;
         order: 1;
     }
 }
