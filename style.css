@@ -529,6 +529,12 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .hero__info {
+        padding-bottom: 160px;
+    }
+}
+
 .hero__contacts {
     list-style-type: none;
     margin: 0;
@@ -824,7 +830,7 @@ header {
 
 @media (max-width: 768px) {
     .catalog__wrapper {
-        padding: 10px 0 50px;
+        padding: 0 0 50px;
     }
 }
 
