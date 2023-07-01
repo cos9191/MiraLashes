@@ -179,6 +179,46 @@ video {
     background-color: var(--color-pink);
 }
 
+/* ANIMATION */
+
+.animation__breath {
+    animation: breathing 2s infinite;
+}
+
+@keyframes breathing {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animation-shiny {
+    position: relative;
+    overflow: hidden;
+}
+
+.animation-shiny::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -110%;
+    left: -110%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0), #ffffff80 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+    animation: shiny 2s infinite;
+}
+
+@keyframes shiny {
+    100% {
+        transform: rotateZ(60deg) translate(11em, -19em);
+    }
+}
+
+.animation-shiny:hover::after,
+.animation-shiny:focus::after {
+    animation: shiny 1s forwards;
+}
+
 /* HEADER */
 
 header {
@@ -438,10 +478,6 @@ header {
     }
 }
 
-.hero__wrapper > picture {
-    position: relative;
-}
-
 .hero__img-main {
     width: 100%;
 }
@@ -451,20 +487,10 @@ header {
         margin: 0 auto;
         object-fit: cover;
         height: auto;
-        /*backdrop-filter: blur(50px);*/
-        /*background-image: linear-gradient(to top, transparent 50%, black 51%);*/
         mask-image: linear-gradient(to top, transparent, black);
         -webkit-mask-image: linear-gradient(to top, transparent, black);
     }
 }
-
-@media (max-width: 1200px) {
-    .hero__wrapper > picture {
-        /*box-shadow: 0 0 8px 8px white inset;*/
-    }
-}
-
-/*.hero__wrapper > picture*/
 
 .hero__info-wrapper {
     width: 95%;
@@ -770,8 +796,8 @@ header {
 /* CATALOG */
 
 .catalog {
-    text-align: center;
     background-color: var(--color-snow);
+    text-align: center;
 }
 
 .catalog__wrapper {
@@ -781,7 +807,13 @@ header {
 @media (max-width: 1200px) {
     .catalog__wrapper {
         padding: 10px 15px 50px;
+    }
 }
+
+@media (max-width: 768px) {
+    .catalog__wrapper {
+        padding: 10px 0 50px;
+    }
 }
 
 .catalog__wrapper h2 {
@@ -791,6 +823,12 @@ header {
     font-size: 44px;
     font-weight: 100;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .catalog__wrapper h2 {
+        font-size: 32px;
+    }
 }
 
 .catalog__wrapper h2 span {
@@ -816,8 +854,14 @@ header {
     max-width: 1000px;
 }
 
+.accordion__content p {
+    /*text-align: start;*/
+    text-align: justify;
+}
+
 .accordion__element .accordion__button {
     text-align: start;
+    padding-left: 0;
     width: 100%;
 
     color: var(--color-bright-grey);
