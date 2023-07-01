@@ -342,6 +342,10 @@ header {
     align-self: center;
 }
 
+.header__socials-list--mobile {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .header__socials-list {
         padding-right: 30px;
@@ -352,6 +356,16 @@ header {
 @media (max-width: 768px) {
     .header__socials-list {
         display: none;
+    }
+
+    .header__socials-list--mobile {
+        display: inline-flex;
+        padding: 20px 0;
+        order: 3;
+    }
+
+    .header__socials-list--mobile a {
+        padding: 0;
     }
 }
 
