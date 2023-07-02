@@ -1,4 +1,5 @@
 const promoSwiperNode = document.querySelector('.promo__swiper');
+const catalogSwiperNode = document.querySelector('.catalog__swiper');
 const featuresSwiperNode = document.querySelector('.features__swiper');
 const reviewsSwiperNode = document.querySelector('.reviews__swiper');
 const staffSwiperNode = document.querySelector('.staff__swiper');
@@ -25,6 +26,31 @@ export const initSwiper = () => {
                 nextEl: '.promo__swiper-button-next',
                 prevEl: '.promo__swiper-button-prev',
             },
+        });
+    }
+
+    if (catalogSwiperNode) {
+        const catalogSwiper = new Swiper('.catalog__swiper', { // eslint-disable-line
+
+            loop: true,
+            slidesPerView: 1,
+
+            thumbs: {
+                swiper: {
+                    el: '.catalog-thumbs__swiper',
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+
+                    breakpoints: {
+                        // when window width is >= 1199px
+                        768: {
+
+                            slidesPerView: 4,
+                            spaceBetween: 20,
+                        },
+                    },
+                }
+            }
         });
     }
 
