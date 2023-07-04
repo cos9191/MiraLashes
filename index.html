@@ -18,6 +18,13 @@
     <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-bold-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#000000">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <header>
@@ -243,32 +250,38 @@
             <h2><span>УСЛУГИ,</span> КОТОРЫЕ МЫ&nbsp;ПРЕДЛАГАЕМ ГОСТЯМ</h2>
             <h3>Наращивание ресниц</h3>
             <div class="accordion" data-accordion="parent" data-single="">
-                <div class="accordion__element is-active" data-accordion="element">
+                <div class="accordion__element" data-accordion="element">
                     <button class="btn accordion__button" type="button" data-accordion="button">Мокрый эффект - 2000 ₽</button>
                     <div class="accordion__content" data-accordion="content">
-                        <div class="accordion__wrapper">
+                        <div class="accordion__wrapper catalog__swiper-container">
                             <div class="swiper catalog__swiper">
                                 <div class="swiper-wrapper catalog__swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <picture>
-                                            <source type="image/webp" srcset="img/catalog/wet_color.webp">
-                                            <img src="img/catalog/wet_color.jpg" width="1672" height="1977"
-                                                 alt="Мокрый эффект." loading="lazy">
-                                        </picture>
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/wet_brown.webp">
+                                                <img src="img/catalog/wet_brown.jpg" width="1672" height="1660"
+                                                     alt="Мокрый эффект." loading="lazy">
+                                            </picture>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <picture>
-                                            <source type="image/webp" srcset="img/catalog/wet_ray_color.webp">
-                                            <img src="img/catalog/wet_ray_color.jpg" width="1980" height="2480"
-                                                 alt="Мокрый эффект." loading="lazy">
-                                        </picture>
+                                    <div class="swiper-slide swiper-zoom-container">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/wet_ray_brown.webp">
+                                                <img src="img/catalog/wet_ray_brown.jpg" width="1980" height="2480"
+                                                     alt="Мокрый эффект." loading="lazy">
+                                            </picture>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <picture>
-                                            <source type="image/webp" srcset="img/catalog/wet.webp">
-                                            <img src="img/catalog/wet.jpg" width="838" height="1280"
-                                                 alt="Мокрый эффект." loading="lazy">
-                                        </picture>
+                                    <div class="swiper-slide swiper-zoom-container">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/wet.webp">
+                                                <img src="img/catalog/wet.jpg" width="838" height="1280"
+                                                     alt="Мокрый эффект." loading="lazy">
+                                            </picture>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -276,16 +289,16 @@
                                 <div class="swiper-wrapper catalog-thumbs__swiper-wrapper">
                                     <div class="swiper-slide">
                                         <picture>
-                                            <source type="image/webp" srcset="img/catalog/wet_color.webp">
-                                            <img src="img/catalog/wet_color.jpg" width="1672" height="1977"
+                                            <source type="image/webp" srcset="img/catalog/wet_brown.webp">
+                                            <img src="img/catalog/wet_brown.jpg" width="1672" height="1660"
                                                  alt="Мокрый эффект, миниатюра." loading="lazy">
                                         </picture>
-                                        <div class="caption">Мокрый эффект, коричневые реснички</div>
+                                        <div class="caption">Мокрый эффект коричневые реснички</div>
                                     </div>
                                     <div class="swiper-slide">
                                         <picture>
-                                            <source type="image/webp" srcset="img/catalog/wet_ray_color.webp">
-                                            <img src="img/catalog/wet_ray_color.jpg" width="1980" height="2480"
+                                            <source type="image/webp" srcset="img/catalog/wet_ray_brown.webp">
+                                            <img src="img/catalog/wet_ray_brown.jpg" width="1980" height="2480"
                                                  alt="Мокрый эффект, миниатюра." loading="lazy">
                                         </picture>
                                         <div class="caption">Мокрый эффект с лучами, коричневые реснички </div>
@@ -307,7 +320,100 @@
                 <div class="accordion__element" data-accordion="element">
                     <button class="btn accordion__button accordion__button" type="button" data-accordion="button">Объём 1.5 - 2D - 2100 ₽</button>
                     <div class="accordion__content" data-accordion="content">
-                        <div class="accordion__wrapper">
+                        <div class="accordion__wrapper catalog__swiper-container">
+                            <div class="swiper catalog__swiper">
+                                <div class="swiper-wrapper catalog__swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/catalog/2d_m_fox.webp">
+                                                <img src="img/catalog/2d_m_fox.jpg" width="591" height="907"
+                                                     alt="2D изгиб М Лисий эффект." loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/1.5d_s+l_arrows.webp">
+                                                <img src="img/catalog/1.5d_s+l_arrows.jpg" width="760" height="1280"
+                                                     alt="1.5D изгиб С+Л эффект стрелочки." loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/2d_c+l_natural.webp">
+                                                <img src="img/catalog/2d_c+l_natural.jpg" width="909" height="1081"
+                                                     alt="2D изгиб С+Л натуральный эффект." loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/2d_c+l_arrows.webp">
+                                                <img src="img/catalog/2d_c+l_arrows.jpg" width="960" height="1137"
+                                                     alt="2D изгиб С+Л эффект стрелочки." loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/catalog/2d_d_doll_brown.webp">
+                                                <img src="img/catalog/2d_d_doll_brown.jpg" width="1092" height="1125"
+                                                     alt="2D изгиб Д кукольный эффект коричневые реснички." loading="lazy">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper catalog-thumbs__swiper">
+                                <div class="swiper-wrapper catalog-thumbs__swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="./img/catalog/2d_m_fox.webp">
+                                            <img src="img/catalog/2d_m_fox.jpg" width="591" height="907"
+                                                 alt="2D изгиб М Лисий эффект." loading="lazy">
+                                        </picture>
+                                        <div class="caption">Объём 2D изгиб М Лисий эффект</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/1.5d_s+l_arrows.webp">
+                                            <img src="img/catalog/1.5d_s+l_arrows.jpg" width="760" height="1280"
+                                                 alt="1.5D изгиб С+Л эффект стрелочки." loading="lazy">
+                                        </picture>
+                                        <div class="caption">Объём 1.5D изгиб С+Л эффект стрелочки</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/2d_c+l_natural.webp">
+                                            <img src="img/catalog/2d_c+l_natural.jpg" width="909" height="1081"
+                                                 alt="2D изгиб С+Л натуральный эффект." loading="lazy">
+                                        </picture>
+                                        <div class="caption">Объём 2D изгиб С+Л натуральный эффект</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/2d_c+l_arrows.webp">
+                                            <img src="img/catalog/2d_c+l_arrows.jpg" width="960" height="1137"
+                                                 alt="2D изгиб С+Л эффект стрелочки." loading="lazy">
+                                        </picture>
+                                        <div class="caption">Объём 2D изгиб С+Л эффект стрелочки</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source type="image/webp" srcset="img/catalog/2d_d_doll_brown.webp">
+                                            <img src="img/catalog/2d_d_doll_brown.jpg" width="1092" height="1125"
+                                                 alt="2D изгиб Д кукольный эффект коричневые реснички." loading="lazy">
+                                        </picture>
+                                        <div class="caption">Объём 2D изгиб Д кукольный эффект коричневые реснички</div>
+                                    </div>
+                                </div>
+                            </div>
                             <p>
                                 Наращивание ресниц по&nbsp;технологии 1.5 - 2D&nbsp;&mdash; эффективная косметическая процедура, позволяет получить длинные, густые и&nbsp;пушистые ресницы, добиться большей выразительности и&nbsp;глубины взгляда.
                             </p>

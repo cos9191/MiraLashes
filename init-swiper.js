@@ -1,61 +1,91 @@
-const promoSwiperNode = document.querySelector('.promo__swiper');
-const catalogSwiperNode = document.querySelector('.catalog__swiper');
+// const promoSwiperNode = document.querySelector('.promo__swiper');
+const catalogSwiperNodes = document.querySelectorAll('.catalog__swiper-container');
 const featuresSwiperNode = document.querySelector('.features__swiper');
 const reviewsSwiperNode = document.querySelector('.reviews__swiper');
 const staffSwiperNode = document.querySelector('.staff__swiper');
 
 export const initSwiper = () => {
-    if (promoSwiperNode) {
-        const promoSwiper = new Swiper('.promo__swiper', { // eslint-disable-line
 
-            loop: true,
-            slidesPerView: 1,
-            watchOverflow: true,
-            // initialSlide: 0,
-            // centeredSlides: true,
+    // if (promoSwiperNode) {
+    //     const promoSwiper = new Swiper(promoSwiperNode, { // eslint-disable-line
+    //
+    //         loop: true,
+    //         slidesPerView: 1,
+    //         watchOverflow: true,
+    //         // initialSlide: 0,
+    //         // centeredSlides: true,
+    //
+    //         breakpoints: {
+    //             // when window width is >= 1199px
+    //             1200: {
+    //                 slidesPerView: 3,
+    //                 spaceBetween: 30,
+    //             },
+    //         },
+    //
+    //         navigation: {
+    //             nextEl: '.promo__swiper-button-next',
+    //             prevEl: '.promo__swiper-button-prev',
+    //         },
+    //     });
+    // }
 
-            breakpoints: {
-                // when window width is >= 1199px
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
+    if (catalogSwiperNodes) {
 
-            navigation: {
-                nextEl: '.promo__swiper-button-next',
-                prevEl: '.promo__swiper-button-prev',
-            },
-        });
-    }
+        catalogSwiperNodes.forEach(function (swiperNode) {
+            const galleryTop = swiperNode.querySelector('.catalog__swiper');
+            const galleryThumbs = swiperNode.querySelector('.catalog-thumbs__swiper');
 
-    if (catalogSwiperNode) {
-        const catalogSwiper = new Swiper('.catalog__swiper', { // eslint-disable-line
 
-            loop: true,
-            slidesPerView: 1,
+            if (galleryTop && galleryThumbs) {
+                const mainSwiper = new Swiper(galleryTop, { // eslint-disable-line
+                    loop: true,
+                    initialSlide: 1,
 
-            thumbs: {
-                swiper: {
-                    el: '.catalog-thumbs__swiper',
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-
-                    breakpoints: {
-                        // when window width is >= 1199px
-                        768: {
-
-                            slidesPerView: 4,
-                            spaceBetween: 20,
-                        },
+                    zoom: {
+                        // toggle: true,
+                        // maxRatio: 2,
+                        minRatio: 1,
                     },
-                }
+
+                    thumbs: {
+                        swiper: {
+                            el: galleryThumbs,
+                            // loop: true,
+                            // loopedSlides: 2,
+                            initialSlide: 1,
+                            centeredSlides: true,
+                            spaceBetween: 10,
+                            slideToClickedSlide: true,
+                            slidesPerView: 3,
+                            watchSlidesProgress: true,
+                            watchSlidesVisibility: true,
+
+                            breakpoints: {
+                                // when window width is >= 768px
+                                768: {
+                                    centeredSlides: false,
+                                    slidesPerView: 5,
+                                    spaceBetween: 20,
+                                },
+                            },
+                        }
+                    }
+                });
             }
+
+            // const thumbsSwiper = new Swiper(swiperNode.querySelector('.catalog-thumbs__swiper'), {
+            //
+            //     thumbs: {
+            //         swiper: mainSwiper,
+            //     },
+            // });
         });
     }
+
 
     if (featuresSwiperNode) {
-        const featuresSwiper = new Swiper('.features__swiper', { // eslint-disable-line
+        const featuresSwiper = new Swiper(featuresSwiperNode, { // eslint-disable-line
 
             loop: true,
             slidesPerView: 1,
@@ -76,7 +106,7 @@ export const initSwiper = () => {
     }
 
     if (reviewsSwiperNode) {
-        const reviewsSwiper = new Swiper('.reviews__swiper', { // eslint-disable-line
+        const reviewsSwiper = new Swiper(reviewsSwiperNode, { // eslint-disable-line
 
             loop: true,
             autoHeight: true,
@@ -99,7 +129,7 @@ export const initSwiper = () => {
     }
 
     if (staffSwiperNode) {
-        const staffSwiper = new Swiper('.staff__swiper', { // eslint-disable-line
+        const staffSwiper = new Swiper(staffSwiperNode, { // eslint-disable-line
 
             loop: true,
             autoHeight: true,
