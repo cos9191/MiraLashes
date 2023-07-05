@@ -51,9 +51,9 @@ export const initSwiper = () => {
                     thumbs: {
                         swiper: {
                             el: galleryThumbs,
-                            // loop: true,
+                            loop: true,
                             // loopedSlides: 2,
-                            initialSlide: 1,
+                            // initialSlide: 1,
                             centeredSlides: true,
                             spaceBetween: 10,
                             slideToClickedSlide: true,
