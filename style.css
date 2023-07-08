@@ -1153,7 +1153,7 @@ header {
     font-size: 40px;
     border-radius: 10px;
     background-color: #e1effd;
-    padding: 0 10px 2px 10px;
+    padding: 0 10px 18px 10px;
 }
 
 .features__swiper-button-prev:hover,
@@ -1297,7 +1297,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    padding: 0 10px 20px 10px;
+    padding: 0 10px 18px 10px;
     top: 120px;
     width: fit-content;
     height: 40px;
@@ -1499,21 +1499,16 @@ header {
 .staff__swiper-button-next {
     width: fit-content;
     height: 40px;
-    top: 60%;
+    top: 300px;
     font-size: 40px;
     border-radius: 10px;
     background-color: var(--color-alice-blue);
-    padding: 0 10px 2px 10px;
+    padding: 0 10px 18px 10px;
 }
 
 .staff__swiper-button-prev:hover,
 .staff__swiper-button-next:hover {
     opacity: 0.5;
-}
-
-.staff__swiper-button-next,
-.staff__swiper-button-prev {
-    top: 300px;
 }
 
 .staff__swiper-button-prev {
