@@ -1763,8 +1763,8 @@ header {
 @media (max-width: 1200px) {
     .footer-contacts__map {
         width: 100vw;
-        margin-left: -45px;
-        margin-right: -45px;
+        /*margin-left: -45px;*/
+        margin-right: 17px;
     }
 }
 
