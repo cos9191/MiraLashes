@@ -1153,7 +1153,7 @@ header {
     font-size: 40px;
     border-radius: 10px;
     background-color: #e1effd;
-    padding: 0 10px 18px 10px;
+    padding: 0 10px 5px 10px;
 }
 
 .features__swiper-button-prev:hover,
@@ -1297,7 +1297,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    padding: 0 10px 18px 10px;
+    padding: 0 10px 5px 10px;
     top: 120px;
     width: fit-content;
     height: 40px;
@@ -1503,7 +1503,7 @@ header {
     font-size: 40px;
     border-radius: 10px;
     background-color: var(--color-alice-blue);
-    padding: 0 10px 18px 10px;
+    padding: 0 10px 5px 10px;
 }
 
 .staff__swiper-button-prev:hover,
