@@ -1,6 +1,7 @@
 import {initSwiper} from './init-swiper.js';
-import {initNavMenu} from './navMenu.js';
+import {initNavMenu} from './modules/navMenu.js';
 import {initAccordions} from './init-accordion.js';
+import {initModals} from "./init-modals.js";
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -17,5 +18,6 @@ window.addEventListener('DOMContentLoaded', () => {
         initNavMenu();
         initSwiper();
         initAccordions();
+        initModals();
     });
 });

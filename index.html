@@ -10,9 +10,10 @@
     <meta name="keywords"
           content="Наращивание ресниц, архитектура бровей, коллагенирование ресниц и бровей. Гарантия качества. Ценим ваше время.">
 
-    <link rel="stylesheet" href="./data-accordion.css">
-    <link rel="stylesheet" href="./swiper-bundle.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/data-accordion.css">
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -1136,11 +1137,31 @@
                     </a>
                 </li>
             </ul>
-            <a class="footer__private-data" href="#">Политика конфиденциальности</a>
+            <button class="footer__private-data" type="button" data-open-modal="modal-privacy">Политика конфиденциальности</button>
         </nav>
     </div>
 </footer>
-<script src="./swiper-bundle.min.js"></script>
-<script src="./main.js" type="module"></script>
+<section class="modal" data-modal="modal-privacy">
+    <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal=""></div>
+        <div class="modal__content">
+            <section>
+                <h2 class="subtitle">Политика конфиденциальности</h2>
+                <p>Мы ценим Вашу конфиденциальность и хотим, чтобы Вы чувствовали себя комфортно, используя наш сайт. Мы не собираем и не обрабатываем персональные данные пользователей, в том числе их имя, адрес, номер телефона и другие данные, позволяющие идентифицировать человека.</p>
+                <p>Мы используем файлы cookie для улучшения качества работы нашего сайта и обеспечения удобства использования. Файлы cookie представляют собой небольшие текстовые файлы, которые сохраняются на Вашем компьютере или устройстве при посещении нашего сайта. Они позволяют нам отслеживать Вашу активность на сайте и улучшать его работу.</p>
+                <p>Вы можете отказаться от использования файлов cookie, изменив настройки Вашего браузера. Однако, это может повлиять на работу нашего сайта.</p>
+                <p>Мы не передаем Ваши персональные данные третьим лицам.</p>
+                <p>Мы соблюдаем требования Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+                <p>Если у Вас есть какие-либо вопросы по нашей политике конфиденциальности, пожалуйста, свяжитесь с нами.</p>
+            </section>
+<!--            modal__close-btn-->
+            <button class="btn btn-modal" type="button" aria-label="Закрыть попап" data-close-modal="" data-focus="">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</section>
+<script src="./js/vendor/swiper-bundle.min.js"></script>
+<script src="./js/main.js" type="module"></script>
 </body>
 </html>

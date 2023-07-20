@@ -1,34 +1,9 @@
-// const promoSwiperNode = document.querySelector('.promo__swiper');
 const catalogSwiperNodes = document.querySelectorAll('.catalog__swiper-container');
 const featuresSwiperNode = document.querySelector('.features__swiper');
 const reviewsSwiperNode = document.querySelector('.reviews__swiper');
 const staffSwiperNode = document.querySelector('.staff__swiper');
 
 export const initSwiper = () => {
-
-    // if (promoSwiperNode) {
-    //     const promoSwiper = new Swiper(promoSwiperNode, { // eslint-disable-line
-    //
-    //         loop: true,
-    //         slidesPerView: 1,
-    //         watchOverflow: true,
-    //         // initialSlide: 0,
-    //         // centeredSlides: true,
-    //
-    //         breakpoints: {
-    //             // when window width is >= 1199px
-    //             1200: {
-    //                 slidesPerView: 3,
-    //                 spaceBetween: 30,
-    //             },
-    //         },
-    //
-    //         navigation: {
-    //             nextEl: '.promo__swiper-button-next',
-    //             prevEl: '.promo__swiper-button-prev',
-    //         },
-    //     });
-    // }
 
     if (catalogSwiperNodes) {
 
@@ -73,13 +48,6 @@ export const initSwiper = () => {
                     }
                 });
             }
-
-            // const thumbsSwiper = new Swiper(swiperNode.querySelector('.catalog-thumbs__swiper'), {
-            //
-            //     thumbs: {
-            //         swiper: mainSwiper,
-            //     },
-            // });
         });
     }
 

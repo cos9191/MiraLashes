@@ -1,4 +1,4 @@
-import {Accordions} from './accordions.js';
+import {Accordions} from './modules/accordions.js';
 let accordions;
 
 const initAccordions = () => {
